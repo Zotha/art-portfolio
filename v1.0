@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css/js stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/87f5d8eb7e.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Barrio|Cinzel+Decorative|Frijole|Ravi+Prakash" rel="stylesheet">
+</head>
+  
+  <style>
+body{
+  margin-top: 10px;
+  padding: 0px;
+  
+}
+
+p {
+  color: white;
+  size: 1.2em;
+  padding-left: 300px;
+  font-family: Frijole;
+}
+
+.img-stretch{
+  height:200px;
+  width:100%;
+}
+
+/* attributes of background img */
+#bg img {
+  position: fixed; 
+  left: -8%;
+  width: 150%; 
+  height: 200%;
+  background-repeat: no-repeat;
+  z-index: -1
+}
+/* start img from top left corner;
+scale to 50% of doubled size -
+takes img back to 100% */
+#bg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.container {
+    right: 0px;
+    margin-left: 100px;
+}
+
+.trenchi {
+  border: solid 2px #ff4d4d;
+  border-radius: 45%;
+  float: right;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.header {
+  margin-top: 30px;
+  font-family: 'Barrio', cursive;
+  font-size: 4em;
+  color: #ff4d4d;
+}
+
+.subhead {
+  font-family: 'Barrio', cursive;
+  font-size: 2.5em; 
+  color: #ff4d4d;
+}
+
+.border {
+  border: solid 2px #ff4d4d;
+  border-radius: 5%;
+}
+
+.name {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* contact form */
+* {
+	margin-left: 0;
+	padding: 0; 
+  font-family: 'Frijole', sans-serif;
+  color: white;
+}
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+/* box height and width */
+#contact-area {
+	width: 80%;
+	margin-top: 25px;
+  font-size: 1em;
+	margin-bottom: 15px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 100%;
+	font-size: 1em;
+	margin: 0px 0px 10px 300px;
+	border: 2px solid #ff4d4d;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+/* fillable boxes change border */
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid red;
+  background-image: white;
+}
+
+/* submit button idle */
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+  font-family: 'Frijole', sans-serif;
+  background-color: #ff4d4d;
+  color: white;
+  border: red solid 1px;
+
+}
+/* submut button hover */
+#contact-area input.submit-button:hover  {
+  color: #ff4d4d;
+  background-color: white;
+  font-size: 1.2em;
+  font-family: 'Barrio', sans-serif;
+}
+
+/* text */
+label {
+	float: left;
+	text-align: right;
+  margin-left: 300px;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+/* end contact form */
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .trenchi {
+      clear: both;
+      border: solid 2px #ff4d4d;
+      border-radius: 45%;
+      display: block;
+      block-align: center;
+      width: 60%;
+      height: auto;
+      margin: 0px;
+    }
+    
+    p {
+      padding-left: 60px;
+    }
+    
+    #contact-area input, #contact-area textarea {
+      margin-left: 60px;
+    }
+    
+    label {
+      margin-left: 60px;
+    }
+
+}
+  </style>
+  </head>
+  <body>
+  <!-- background img -->
+  <div id="bg">
+    <img src="http://i65.tinypic.com/119uslh.jpg" alt="" background="fixed">
+  </div>
+  <!-- close bg -->
+
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-xs-12">
+        <img class="trenchi img-responsive" src="http://i67.tinypic.com/2q097bc.jpg">
+        <p class="header">Trenchi</p>
+        <p class="subhead">Artist for Hire</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, ultricies augue vel sociis eros litora est tincidunt, ad inceptos cubilia porttitor cras fusce. Integer ridiculus laoreet suspendisse porta donec consequat nulla, conubia libero nam vestibulum
+          nibh fames pretium, eget mollis urna taciti dui lobortis. Auctor luctus cras accumsan ullamcorper magna lectus vulputate integer gravida sed, dui aptent congue mauris eu facilisis himenaeos dignissim.</p>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <p class="header">Portfolio</p>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <p class="name">Piece Title</p>
+        <img class="img-responsive inline-block border img-stretch" src="http://i64.tinypic.com/2vuabn7.jpg"> <br>
+      </div>
+
+      <div class="col-xs-4">
+        <p class="name">Piece Title</p>
+        <img class="img-responsive inline-block border img-stretch" src="http://i64.tinypic.com/54wqra.jpg">
+      </div>
+
+      <div class="col-xs-4">
+        <p class="name">Piece Title</p>
+        <img class="img-responsive inline-block border img-stretch" src="http://i66.tinypic.com/2q3198p.jpg">
+      </div>
+    </div>
+
+
+    <!--titles-->
+    <div class="row">
+      <div class="col-xs-4">
+        <p class="name">Piece Title</p>
+        <img class="img-responsive inline-block border  img-stretch" src="http://i68.tinypic.com/oa14b7.jpg">
+      </div>
+      <div class="col-xs-4">
+        <p class="name">Piece Title</p>
+        <img class="img-responsive inline-block border  img-stretch" src="http://i65.tinypic.com/egv4td.jpg">
+      </div>
+      <div class="col-xs-4">
+        <p class="name">Piece Title</p>
+        <img class="img-responsive inline-block border  img-stretch" src="http://i68.tinypic.com/35mksqu.jpg">
+      </div>
+      <!--close row-->
+
+      
+      
+      <div id="contact" class="tab-pane">
+   
+  <p class="header">Contact Me:</p>
+
+<div id="contact-area">
+				<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+	
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+				
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+			
+			<div style="clear: both;"></div></p>
+    </div> <!-- close contact-area  -->
+
+    </div><!--close container-->
+
+  </body>
+</html>
